@@ -1,0 +1,23 @@
+[
+  {
+    "email": "test@test.com",
+    "createdAt": 1644207294761,
+    "orderReadyTime": 1644208194693,
+    "menuItems": [
+      {
+        "name": "Coffee",
+        "price": 2,
+        "taxCategory": {
+          "taxRate": 0.07
+        }
+      },
+      {
+        "name": "Latte",
+        "price": 4.5,
+        "taxCategory": {
+          "taxRate": 0.07
+        }
+      }
+    ]
+  }
+]
