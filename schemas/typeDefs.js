@@ -21,7 +21,7 @@ type MenuItems {
     discount: Float
     taxes: Float
     total: Float
-    notification: Boolean
+    notified: Boolean
   }
 
   type TaxCategory {
@@ -39,6 +39,7 @@ type MenuItems {
 
   type Mutation {
     addOrder(email: String!, menuItems: [String]!): Order
+    updateNotificationOrder(id: ID!) : Order
     deleteOrder(id: ID!) : Order
   }
 `;

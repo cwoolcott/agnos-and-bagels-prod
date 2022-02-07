@@ -74,6 +74,7 @@ const resolvers = {
       //Use Util to Calc Subtotal
       const { discount, subTotal, taxes, total } = utils.makeTotal(orderSummary);
 
+
       //For Model 
       newOrder.subTotal = subTotal;
       newOrder.taxes = taxes;
@@ -89,6 +90,13 @@ const resolvers = {
       await newOrder.save();
 
       return orderSummary;
+    },
+    updateNotificationOrder: async (parent, { id }) => {
+      return await Order.findOneAndUpdate(
+        { _id: id },
+        { notified: true },
+        { new: true }
+      );
     },
     deleteOrder: async (parent, { id }) => {
       return await Order.remove(

@@ -1,4 +1,7 @@
 const utils = {
+    roundUp: function (amount) {
+        return Math.round(amount * 100) / 100;
+    },
     makeTotal: function (orderSummary) {
         let taxes = 0;
         let subTotal = 0;
@@ -13,7 +16,7 @@ const utils = {
                 taxes += price * taxCategory.taxRate;
                 subTotal += price;
 
-                //Promotion Check
+                //Promotion Check TODO make dynamic/add other promos
                 if (promotion === "buyonegetone") {
 
                     //Promo set?
@@ -33,8 +36,8 @@ const utils = {
         }
 
         const tempSubtotal = {};
-        tempSubtotal.subTotal = subTotal;
-        tempSubtotal.taxes = taxes;
+        tempSubtotal.subTotal = this.roundUp(subTotal);
+        tempSubtotal.taxes = this.roundUp(taxes);
         tempSubtotal.total = subTotal + taxes;
         tempSubtotal.discount = discount;
 
