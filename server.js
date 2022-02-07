@@ -16,6 +16,11 @@ server.applyMiddleware({ app });
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+app.get('*', (req, res) => {
+  res.send("<h2>Agnos and Bagels Storefront</h2>")
+})
+
+
 db.once('open', () => {
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
