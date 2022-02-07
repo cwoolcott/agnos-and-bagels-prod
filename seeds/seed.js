@@ -2,18 +2,18 @@ const db = require('../config/connection');
 const { MenuItems, Order, TaxCategory } = require('../models');
 
 const menuItemsData = require('./menuItemsData.json');
-const orderData = require('./orderData.json');
+//const orderData = require('./orderData.json');
 const taxCategoryData = require('./taxCategoryData.json');
 
 db.once('open', async () => {
   // clean database
   await MenuItems.deleteMany({});
-  await Order.deleteMany({});
+  //await Order.deleteMany({});
   await TaxCategory.deleteMany({});
 
   // bulk create each model
   const menuItems = await MenuItems.insertMany(menuItemsData);
-  const orders = await Order.insertMany(orderData);
+  //const orders = await Order.insertMany(orderData);
   const taxCategories = await TaxCategory.insertMany(taxCategoryData);
 
   //assign TaxCodes
@@ -27,7 +27,7 @@ db.once('open', async () => {
     await item.save();
   }
 
-  // Order Seed for Testing
+  // Random Items added to Orders
   // for (newOrder of orders) {
 
   //   //Add two random Items to orders
