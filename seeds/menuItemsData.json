@@ -2,23 +2,74 @@
   {
     "itemNumber": 1001,
     "name": "Coffee",
-    "description": "Coffee Black. It'll wake you up",
+    "description": "Drip Coffee, signature roasts on tap",
     "price": 2.0,
     "taxType": "food",
     "promotion": "buyonegetone"
   },
   {
-    "itemNumber": 1002,
-    "name": "Mocha",
-    "description": "Flavored Mocha Drink",
-    "price": 3.5,
+    "itemNumber": 1003,
+    "name": "Cappuccino",
+    "description": "Espresso topped with steamed milk and foam",
+    "price": 4.75,
     "taxType": "food"
   },
   {
-    "itemNumber": 1002,
-    "name": "Latte",
-    "description": "Flavored Latte Drink",
-    "price": 4.5,
+    "itemNumber": 1005,
+    "name": "Americano",
+    "description": "Espresso with added water",
+    "price": 3.5,
+    "taxType": "food",
+    "promotion": "buyonegetone"
+  },
+  {
+    "itemNumber": 2001,
+    "name": "Southern Omelet",
+    "description": "Diced country ham, bacon or sausage with onions, peppers, and cheddar cheese",
+    "price": 10.49,
     "taxType": "food"
+  },
+  {
+    "itemNumber": 2002,
+    "name": "Char-Grilled Cheeseburger",
+    "description": "Served with lettuce and tomato",
+    "price": 9.99,
+    "taxType": "food"
+  },
+  {
+    "itemNumber": 2002,
+    "name": "Hand-Breaded Jumbo Chicken Fingers",
+    "description": "With choice of dipping sauce",
+    "price": 13.99,
+    "taxType": "food"
+  },
+  {
+    "itemNumber": 3001,
+    "name": "Takin Care of Biscuits T-Shirt",
+    "description": "T-Shirt with Logo",
+    "price": 20,
+    "taxType": "clothes"
+  },
+  {
+    "itemNumber": 3002,
+    "name": "Agnos and Bagels Logo Trucker Hat",
+    "description": "This Black and red snapback is a classic look you can wear often",
+    "price": 20,
+    "taxType": "clothes"
+  },
+  {
+    "itemNumber": 4001,
+    "name": "Coffee Accessory Keychain",
+    "description": "French Coffee Press Keychain Key Ring",
+    "price": 11.95,
+    "taxType": "accessories",
+    "promotion": "buyonegetone"
+  },
+  {
+    "itemNumber": 4002,
+    "name": "I Heart Cafe Tumbler",
+    "description": "Up to 24 hours cold and 8 hours hot stainless steel with leak resistant & easy-close lid",
+    "price": 29,
+    "taxType": "accessories"
   }
 ]

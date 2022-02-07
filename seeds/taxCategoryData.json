@@ -6,11 +6,11 @@
   },
   {
     "type": "clothes",
-    "description": "Clothng/Apparal ",
+    "description": "Clothing/Apparal ",
     "taxRate": 0
   },
   {
-    "type": "accessory",
+    "type": "accessories",
     "description": "Handbags/Jewelry/Etc",
     "taxRate": 0.06
   }
